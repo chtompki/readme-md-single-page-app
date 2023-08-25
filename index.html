@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="./vendor/bootstrap-5.3.1-dist/css/bootstrap.min.css" crossorigin="anonymous">
+
+    <title>Hello, world!</title>
+</head>
+<body>
+<h1>Hello, world!</h1>
+
+<div id="readme"></div>
+
+
+<!-- Optional JavaScript -->
+<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+<script src="./vendor/jquery-3.7.0/js/jquery-3.7.0.min.js"  crossorigin="anonymous"></script>
+<script src="./vendor/popper-2.11.8/js/popper.min.js" crossorigin="anonymous"></script>
+<script src="./vendor/bootstrap-5.3.1-dist/js/bootstrap.min.js" crossorigin="anonymous"></script>
+<script src="./vendor/commonmark-0.30.0/js/commonmark.js" crossorigin="anonymous"></script>
+<script>
+    $(document).ready(function() {
+
+        var reader = new commonmark.Parser();
+        var writer = new commonmark.HtmlRenderer();
+        document.
+        // var readmeFile = window.open("README.md")
+        // var parsed = reader.parse(readmeFile); // parsed is a 'Node' tree
+        // // transform parsed if you like...
+        // var result = writer.render(parsed); // result is a String
+        // $("#readme").append(result);
+    });
+</script>
+</body>
+</html>
