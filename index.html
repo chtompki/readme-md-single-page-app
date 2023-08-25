@@ -11,7 +11,6 @@
     <title>Hello, world!</title>
 </head>
 <body>
-<h1>Hello, world!</h1>
 
 <div id="readme"></div>
 
@@ -27,9 +26,15 @@
 
         var reader = new commonmark.Parser();
         var writer = new commonmark.HtmlRenderer();
-        document.
-        // var readmeFile = window.open("README.md")
-        // var parsed = reader.parse(readmeFile); // parsed is a 'Node' tree
+        fetch("./README.md")
+            .then((res) => res.text())
+            .then((text) => {
+                var parsed = reader.parse(text)
+                var result = writer.render(parsed);
+                $("#readme").append(result);
+            })
+            .catch((e) => console.error(e));
+
         // // transform parsed if you like...
         // var result = writer.render(parsed); // result is a String
         // $("#readme").append(result);
