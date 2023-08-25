@@ -2,7 +2,8 @@ readme-md-single-page-app.
 ==========================
 
 This repository is set up to be a github page that serves the `README.md` as a single page app. Currently it is visible
-at [https://www.robtompkins.com/readme-md-single-page-app]. It is worth
+at [https://www.robtompkins.com/readme-md-single-page-app]. The code is hosted at 
+[https://github.com/chtompki/readme-md-single-page-app].
 
 ### Directory Layout
 
